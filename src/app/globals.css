@@ -3,19 +3,39 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --principal: #2196f3;
+  --secundaria: #16a34a;
+  --escura: #2e2e2e;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f6f6f6;
+}
+
+@layer components {
+  .custom-hover-btn {
+    @apply flex h-10 w-32 items-center justify-center rounded-md bg-principal p-2 text-center font-bold text-white;
+  }
+  .custom-hover-btn:hover {
+    @apply scale-105 bg-escura text-principal transition;
+  }
+  .custom-hover-btn:active {
+    @apply opacity-80;
+  }
+
+  .sombra {
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  .custom-ItemNavHeader {
+    @apply px-4 py-2 font-bold;
+  }
+
+  .custom-ItemNavHeader:hover {
+    @apply scale-105 rounded-md bg-principal text-white transition;
+  }
 }
