@@ -21,7 +21,7 @@ body {
     @apply flex h-10 w-32 items-center justify-center rounded-md bg-principal p-2 text-center font-bold text-white;
   }
   .custom-hover-btn:hover {
-    @apply scale-105 bg-escura text-principal transition;
+    @apply scale-105 cursor-pointer bg-escura text-principal transition;
   }
   .custom-hover-btn:active {
     @apply opacity-80;

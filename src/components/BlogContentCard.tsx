@@ -33,7 +33,7 @@ const BlogContentCard = ({
 }: BlogContentCardProps) => {
   return (
     <div className="flex flex-col gap-6 rounded-lg bg-white p-6 shadow-lg transition-all duration-300 hover:scale-105 hover:shadow-xl">
-      <h3 className="flex items-center text-xl font-semibold capitalize text-gray-800 transition-all duration-300 hover:text-blue-600 sm:text-2xl md:text-3xl">
+      <h3 className="flex items-center text-xl font-semibold capitalize text-gray-800 transition-all duration-300 sm:text-2xl md:text-3xl">
         {titulo}
         {icone ? (
           <span className="ml-2">{icone}</span> // Adicionando um pequeno espaço entre o título e o ícone
