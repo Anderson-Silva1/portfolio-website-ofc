@@ -22,6 +22,7 @@ import {
   SiNextdotjs,
   SiPython,
   SiSqlite,
+  SiStyledcomponents,
   SiTypescript,
   SiVercel,
   SiVite,
@@ -64,10 +65,23 @@ const Tecnologias = () => {
       Icone: FaBootstrap,
     },
     {
+      id: 12,
+      NameTecnologia: "Style Components",
+      // color: "text-purple-[#F0B5F0]",
+      color: "text-pink-600",
+      Icone: SiStyledcomponents,
+    },
+    {
       id: 5,
       NameTecnologia: "React Js",
       color: "text-blue-500",
       Icone: FaReact,
+    },
+    {
+      id: 4,
+      NameTecnologia: "Vite",
+      color: "text-yellow-500",
+      Icone: SiVite,
     },
     {
       id: 6,
@@ -138,12 +152,7 @@ const Tecnologias = () => {
       color: "text-red-500",
       Icone: FaNpm,
     },
-    {
-      id: 4,
-      NameTecnologia: "Vite",
-      color: "text-yellow-500",
-      Icone: SiVite,
-    },
+
     {
       id: 5,
       NameTecnologia: "YARN",

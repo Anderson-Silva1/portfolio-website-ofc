@@ -1,7 +1,7 @@
 "use client";
 import { FaBootstrap, FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import Projeto from "../Projeto";
-import { SiVite } from "react-icons/si";
+import { SiStyledcomponents, SiVite } from "react-icons/si";
 import { useState } from "react";
 import { DiJavascript1 } from "react-icons/di";
 
@@ -29,7 +29,7 @@ const Projetos = () => {
       tecnologias: [
         { icon: FaReact, id: 1, color: "text-blue-600" },
         { icon: SiVite, id: 2, color: "text-yellow-500" },
-        { icon: FaCss3, id: 3, color: "text-blue-400" },
+        { icon: SiStyledcomponents, id: 3, color: "text-pink-600" },
       ],
       linkRepo: "https://github.com/Anderson-Silva1/gest-o-financeira-1.0",
       linkDeploy: "https://gestao-financeira-1-0.vercel.app/",
