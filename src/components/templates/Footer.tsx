@@ -1,17 +1,15 @@
 import {
   FaDiscord,
-  FaEnvelope,
   FaGithub,
   FaInstagram,
   FaLinkedin,
-  FaPhone,
   FaYoutube,
 } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 py-10 text-white">
-      <div className="container mx-auto grid grid-cols-1 gap-8 px-6 md:grid-cols-3">
+      <div className="container mx-auto grid grid-cols-1 gap-8 px-6 md:grid-cols-2">
         {/* Links de Navegação */}
         <div>
           <h3 className="text-lg font-semibold">Links Rápidos</h3>
@@ -35,7 +33,7 @@ const Footer = () => {
         </div>
 
         {/* Contato */}
-        <div>
+        {/* <div>
           <h3 className="text-lg font-semibold">Contato</h3>
           <ul className="mt-4 space-y-2">
             <li className="flex items-center">
@@ -45,19 +43,12 @@ const Footer = () => {
               <FaPhone className="mr-2" /> +55 85 98972-8040
             </li>
           </ul>
-        </div>
+        </div> */}
 
         {/* Redes Sociais */}
         <div>
           <h3 className="text-lg font-semibold">Siga-nos</h3>
           <div className="mt-4 flex space-x-4">
-            {/* <a
-              href="https://api.whatsapp.com/send/?phone=5585989728040&text=Ol%C3%A1+Anderson%2C+gostaria+de+conhecer+um+pouco+mais+sobre+seu+trabalho.&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaWhatsapp className="text-2xl hover:text-gray-400" />
-            </a> */}
             <a
               href="https://github.com/Anderson-Silva1"
               target="_blank"
@@ -92,14 +83,6 @@ const Footer = () => {
             <a href="/" target="_blank" rel="noopener noreferrer">
               <FaDiscord className="text-2xl hover:text-gray-400" />
             </a>
-
-            {/* <a
-              href="mailto:anderson.developer360@gmail.com.br"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FaEnvelope className="text-2xl hover:text-gray-400" />
-            </a> */}
           </div>
         </div>
       </div>
