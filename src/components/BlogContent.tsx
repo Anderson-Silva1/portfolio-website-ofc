@@ -2,76 +2,102 @@
 
 import { useState } from "react";
 import BlogContentCard from "./BlogContentCard";
-import BlogHeader from "./BlogHeader";
-import { MdOutlineSignalWifiConnectedNoInternet4 } from "react-icons/md";
-import { IoSchool } from "react-icons/io5";
+import BlogFormacao from "./BlogFormacao";
+import BlogExperiencias from "./BlogExperiencias";
 
 const BlogContent = () => {
-  const [isVerMais, setIsVerMais] = useState(false);
-  const [botaoTexto, setBotaoTexto] = useState("Ver Mais");
+  // const [isVerMais, setIsVerMais] = useState(false);
+  // const [botaoTexto, setBotaoTexto] = useState("Ver Mais");
 
-  const mudar = () => {
-    setIsVerMais((prev) => {
-      const novoEstado = !prev;
-      // Atualiza o texto do botão de acordo com o estado
-      setBotaoTexto(novoEstado ? "Ver Menos" : "Ver Mais");
-      return novoEstado;
-    });
+  // const mudar = () => {
+  //   setIsVerMais((prev) => {
+  //     const novoEstado = !prev;
+  //     // Atualiza o texto do botão de acordo com o estado
+  //     setBotaoTexto(novoEstado ? "Ver Menos" : "Ver Mais");
+  //     return novoEstado;
+  //   });
+  // };
+
+  const [isFormacoes, setIsFormacoes] = useState(false);
+
+  const isFormacoesFunc = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setIsFormacoes(!isFormacoes);
+
+    if (isFormacoes) {
+      (e.target as HTMLButtonElement).innerText = "Ver mais";
+    } else {
+      (e.target as HTMLButtonElement).innerText = "Ver menos";
+    }
   };
 
-  const cards = [
+  const [isExperiencias, setIsExperiencias] = useState(false);
+
+  const isExperienciasFunc = (e: React.MouseEvent<HTMLButtonElement>) => {
+    setIsExperiencias(!isExperiencias);
+
+    if (isExperiencias) {
+      (e.target as HTMLButtonElement).innerText = "Ver mais";
+    } else {
+      (e.target as HTMLButtonElement).innerText = "Ver menos";
+    }
+  };
+
+  const cardsFormacoes = [
     <BlogContentCard
-      icone={<MdOutlineSignalWifiConnectedNoInternet4 />}
-      titulo="Técnico de Instalação"
-      data="Outubro 2024 - Atual"
-      texto="Após meu estágio na GLNET, comecei a trabalhar com instalação e reparo de internet, aplicando conhecimentos técnicos em redes. Realizo a instalação de pontos de acesso, configuração de roteadores e manutenção de cabeamento, aprimorando minhas habilidades em redes e solução de problemas."
-      key={1}
-    />,
-    <BlogContentCard
-      titulo="Ensino superior"
+      titulo="Graduando em Análise e Desenvolvimento de Sistemas - UNESA Estácio de Sá &#128640;&#128187;&#128218;"
       data="Outubro 2022 - Atual"
-      texto="Iniciei minha graduação na UNESA Estácio de Sá, no curso tecnólogo em Análise e Desenvolvimento de Sistemas. Durante o curso, venho adquirindo conhecimentos em programação, engenharia de software, banco de dados e desenvolvimento de aplicações, preparando-me para atuar na área de tecnologia."
-      icone={<IoSchool />}
+      texto="Durante a graduação, venho desenvolvendo minhas habilidades em: 1) Programação e desenvolvimento de aplicações; 2) Engenharia de software e banco de dados; 3) Estrutura de dados e boas práticas em desenvolvimento. Essa formação tem ampliado meu conhecimento na area de tecnologia e fortalecendo minha base"
       key={2}
     />,
+
     <BlogContentCard
-      titulo="Estágio 704 Apps"
-      data="Dezembro 2023 - Junho 2024"
-      texto="Atuei no suporte ao cliente em uma empresa de aplicativos mobile para mobilidade urbana, realizando atendimentos via e-mail, Jira e CRM. Auxiliei na solução de problemas nos aplicativos, adquirindo experiência em suporte técnico e sistemas mobile, embora sem envolvimento direto com programação."
-      key={3}
-    />,
-    <BlogContentCard
-      titulo="Efetivado GLNET - Almoxarifado"
-      data="Abril 2021 - Agosto 2021"
-      texto="Após meu estágio, fui efetivado na GLNET no almoxarifado, onde gerenciava o controle de estoque e a distribuição de materiais para as equipes de campo. Desenvolvi habilidades em organização e gestão de recursos, mas fui cortado devido a dificuldades financeiras da empresa."
-      key={4}
-    />,
-    <BlogContentCard
-      titulo="Efetivado GLNET - Almoxarifado"
-      data="Abril 2021 - Agosto 2021"
-      texto="Após meu estágio, fui efetivado na GLNET no almoxarifado, onde gerenciava o controle de estoque e a distribuição de materiais para as equipes de campo. Desenvolvi habilidades em organização e gestão de recursos, mas fui cortado devido a dificuldades financeiras da empresa."
-      key={5}
-    />,
-    <BlogContentCard
-      titulo="Estágio GLNET 🚀"
-      data="janeiro 2021 - Abril 2021"
-      texto="Estagiei por 3 meses na GLNET, aplicando conhecimentos em Redes de Computadores na instalação, manutenção de redes e resolução de problemas de conectividade, consolidando minha experiência em infraestrutura de redes."
-      key={6}
-    />,
-    <BlogContentCard
-      titulo="Ensino médio Técnico - Redes de computadores 💻"
+      titulo="Técnico em Redes de Computadores - EEEP Ícaro de Sousa Moreira 💻"
       data="Janeiro 2019 - Dezembro 2021"
-      texto="Formação técnica em redes, programação e engenharia de software, com foco em configuração e segurança de redes, administração de servidores e linguagens de programação. Essencial para minha base tecnológica."
+      texto="Formação técnica com ênfase em: 1) Redes de computadores: Configuração, segurânça e administração de redes; 2) Programação: Desenvolvimento de soluções e linguagem de programação; 3) Engenharia de software: Aplicação de boas práticas no desnvolvimento de sistemas. Essa formação foi fundamental para meu desenvolvimento técnico, proporcionando uma base sólida em infraestrutura de redes e programação."
       key={7}
     />,
   ];
 
+  const cardsExperiencias = [
+    <BlogContentCard
+      titulo="Técnico de Instalação &#128666;"
+      data="Outubro 2024 - Atual"
+      texto="Atuo no ramo de instalação e repero de redes de internet, realizando: 1) Configurações de roteadores e instalação de pontos de acesso para melhor desempenho da rede; 2) Manutenção e reparos de cabeamentos estruturados, garantindo conexões estáveis; 3) Diagnósticos e soluções de problemas técnicos, aprimorando a experiência do cliente. Essa experiência tem fortalecido minhas habilidades em redes de computadores, suporte técnico e resoluções de problemas."
+      key={1}
+    />,
+    <BlogContentCard
+      titulo="Estágio 704 Apps &#128640;"
+      data="Dezembro 2023 - Junho 2024"
+      texto="Atuei no suporte ao cliente pelo Jira, email e CRM para Fabrica de Aplicativos 704Apps, uma empresa focada em aplicativos de mobilidade urbana. Nela, trabalhe na: 1) Identificação e resolução de problemas nos aplicativos, garantindo uma melhor experiência ao usuário; 2) Registro e acompanhamento de chamados técnicos, colaborando com a equipe de desenvolvimento; 3) Análise de incidentes para otimizar processos e reduzir recorrências. Essa experiência aprimorou minhas habilidades em suporte técnico, atendimento ao cliente e sistemas mobile"
+      key={3}
+    />,
+    <BlogContentCard
+      titulo="Efetivado GLNET - Almoxarifado &#128640;"
+      data="Abril 2021 - Agosto 2021"
+      texto="Como efetivado na GLNET, atuei no almoxarifado com foco em: 1) Controle de estoque e distibuição de materiais para as equipes do campo; 2) Organizações de insumos para otimizar processos e reduzir disperdícios; 3) Monitoramento de entradas e saídas, garantindo precisão nos registros."
+      key={4}
+    />,
+    <BlogContentCard
+      titulo="Estágio GLNET &#128640;"
+      data="janeiro 2021 - Abril 2021"
+      texto="Durante meu estágio na GLNET, atuei diretamente em: 1) Instalação e manutenção de redes de computadores, assegurando a confiabilidade e eficiência das conexões; 2) Diagnósticos e resoluções de problemas de conectividade, contribuindo para a melhoria contínua da infraestrutura; 3) Suporte técnico em projetos de expansão e melhorias na infraestrutura de TI. Essa experiência consolidou minha expertize em redes de computadores e me preparou para desafios técnicos na área de infraestrutura de TI."
+      key={6}
+    />,
+  ];
+
   return (
-    <div>
-      <BlogHeader onClick={mudar} textoBotao={botaoTexto} />
-      <div className="grid grid-cols-1 gap-6 p-4 md:grid-cols-2">
-        {isVerMais ? cards : cards.slice(0, 4)}
-      </div>
+    <div className="flex flex-col gap-5 text-white">
+      <BlogFormacao
+        cards={cardsFormacoes}
+        isFormacoesFunc={isFormacoesFunc}
+        isFormacoes={isFormacoes}
+      />
+
+      <BlogExperiencias
+        cards={cardsExperiencias}
+        isExperienciasFunc={isExperienciasFunc}
+        isExperiencias={isExperiencias}
+      />
     </div>
   );
 };

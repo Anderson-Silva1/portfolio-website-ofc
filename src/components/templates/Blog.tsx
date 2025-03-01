@@ -3,8 +3,8 @@ import BlogContent from "../BlogContent";
 const Blog = () => {
   return (
     <>
-      <section className="m-auto min-h-screen w-full bg-principal" id="blog">
-        <div className="m-auto w-full max-w-[1280px]">
+      <section className="m-auto w-full" id="blog">
+        <div className="m-auto w-full">
           <BlogContent />
         </div>
       </section>

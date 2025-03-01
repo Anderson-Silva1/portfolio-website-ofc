@@ -30,9 +30,9 @@ const Sobre = () => {
           para melhorar a vida da minha família e contribuir para a sociedade. */}
           Tenho perfil analítico, comunicativo e sou motivado a combinar minha
           formação em tecnologia com meus valores cristãos. Busco a posição de
-          Analista de Sistemas (ou outro cargo), com o objetivo de aplicar
-          minhas habilidades para melhorar a eficiência dos sistemas e
-          contribuir para o sucesso da empresa.
+          Analista de Sistemas, com o objetivo de aplicar minhas habilidades
+          para melhorar a eficiência dos sistemas e contribuir para o sucesso da
+          empresa.
         </p>
         <p className="mb-8 text-center text-sm opacity-95 sm:text-base md:indent-8 lg:text-justify">
           {/* Sou cristão, atuo como Representante de Missões e Professor de Escola
