@@ -1,5 +1,6 @@
 "use client";
 
+import { v4 as uuidv4 } from "uuid";
 import { useState } from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
 import {
@@ -35,56 +36,56 @@ const Tecnologias = () => {
 
   const tecnologiasFront = [
     {
-      id: 1,
+      id: uuidv4(),
       NameTecnologia: "HTML5",
       color: "text-orange-500",
       Icone: FaHtml5,
     },
     {
-      id: 2,
+      id: uuidv4(),
       NameTecnologia: "CSS3",
       color: "text-blue-400",
       Icone: FaCss3,
     },
     {
-      id: 3,
+      id: uuidv4(),
       NameTecnologia: "Tailwind CSS",
       color: "text-blue-600",
       Icone: RiTailwindCssFill,
     },
     {
-      id: 4,
+      id: uuidv4(),
       NameTecnologia: "SCSS",
       color: "text-pink-500",
       Icone: FaSass,
     },
     {
-      id: 7,
+      id: uuidv4(),
       NameTecnologia: "Bootstrap",
       color: "text-purple-800",
       Icone: FaBootstrap,
     },
     {
-      id: 12,
+      id: uuidv4(),
       NameTecnologia: "Style Components",
       // color: "text-purple-[#F0B5F0]",
       color: "text-pink-600",
       Icone: SiStyledcomponents,
     },
     {
-      id: 5,
+      id: uuidv4(),
       NameTecnologia: "React Js",
       color: "text-blue-500",
       Icone: FaReact,
     },
     {
-      id: 4,
+      id: uuidv4(),
       NameTecnologia: "Vite",
       color: "text-yellow-500",
       Icone: SiVite,
     },
     {
-      id: 6,
+      id: uuidv4(),
       NameTecnologia: "Next Js",
       color: "text-black",
       Icone: SiNextdotjs,
@@ -93,25 +94,25 @@ const Tecnologias = () => {
 
   const tecnologiasBack = [
     {
-      id: 1,
+      id: uuidv4(),
       NameTecnologia: "Node.js",
       color: "text-green-500",
       Icone: FaNodeJs,
     },
     {
-      id: 2,
+      id: uuidv4(),
       NameTecnologia: "Git",
       color: "text-gray-500",
       Icone: FaGit,
     },
     {
-      id: 3,
+      id: uuidv4(),
       NameTecnologia: "TypeScript",
       color: "text-blue-600",
       Icone: SiTypescript,
     },
     {
-      id: 4,
+      id: uuidv4(),
       NameTecnologia: "Python",
       color: "text-green-600",
       Icone: SiPython,
@@ -120,13 +121,13 @@ const Tecnologias = () => {
 
   const tecnologiasBancoDados = [
     {
-      id: 1,
+      id: uuidv4(),
       NameTecnologia: "PostgreSQL",
       color: "text-blue-600",
       Icone: BiLogoPostgresql,
     },
     {
-      id: 2,
+      id: uuidv4(),
       NameTecnologia: "SQLite",
       color: "text-blue-400",
       Icone: SiSqlite,
@@ -135,51 +136,51 @@ const Tecnologias = () => {
 
   const tecnologiasFerramentas = [
     {
-      id: 1,
+      id: uuidv4(),
       NameTecnologia: "VS Code",
       color: "text-blue-500",
       Icone: VscVscode,
     },
     {
-      id: 2,
+      id: uuidv4(),
       NameTecnologia: "Gimp",
       color: "text-black",
       Icone: SiGimp,
     },
     {
-      id: 3,
+      id: uuidv4(),
       NameTecnologia: "NPM",
       color: "text-red-500",
       Icone: FaNpm,
     },
 
     {
-      id: 5,
+      id: uuidv4(),
       NameTecnologia: "YARN",
       color: "text-blue-400",
       Icone: FaYarn,
     },
     {
-      id: 6,
+      id: uuidv4(),
       NameTecnologia: "GitHub",
       color: "text-black",
       Icone: FaGithub,
     },
     {
-      id: 7,
+      id: uuidv4(),
       NameTecnologia: "Insôminia",
       color: "text-purple-600",
       Icone: SiInsomnia,
     },
 
     {
-      id: 9,
+      id: uuidv4(),
       NameTecnologia: "Figma",
       color: "text-black",
       Icone: FaFigma,
     },
     {
-      id: 10,
+      id: uuidv4(),
       NameTecnologia: "Vercel",
       color: "text-black",
       Icone: SiVercel,

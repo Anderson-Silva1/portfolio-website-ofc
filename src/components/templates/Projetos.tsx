@@ -1,4 +1,5 @@
 "use client";
+import { v4 as uuidv4 } from "uuid";
 import { FaBootstrap, FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import Projeto from "../Projeto";
 import { SiStyledcomponents, SiVite } from "react-icons/si";
@@ -24,7 +25,7 @@ const Projetos = () => {
 
   const projetos = [
     {
-      id: "1",
+      id: uuidv4(),
       titulo: "Gestão financeira",
       tecnologias: [
         { icon: FaReact, id: 1, color: "text-blue-600" },
@@ -38,7 +39,7 @@ const Projetos = () => {
         "Uma aplicação web para organização financeira, desenvolvida com React.js e Vite. Os dados são armazenados no LocalStorage, garantindo persistência mesmo após o fechamento do navegador.",
     },
     {
-      id: "2",
+      id: uuidv4(),
       titulo: "Lista de Taferas",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -52,7 +53,7 @@ const Projetos = () => {
         "Uma aplicação web para gerenciamento de tarefas, desenvolvida com React.js e Vite. As tarefas são armazenadas no LocalStorage, permitindo que os dados permaneçam salvos mesmo após o fechamento do navegador.",
     },
     {
-      id: "7",
+      id: uuidv4(),
       titulo: "Conversor",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -66,7 +67,7 @@ const Projetos = () => {
         "Projeto desenvolvido junto a equipe Dev Club onde pegamos informações de uma API para saber o real valor das moedas mais valiosas do mercado e faz a conversão para a nossa moeda e para outras moedas",
     },
     {
-      id: "9",
+      id: uuidv4(),
       titulo: "IMC BootsTrap",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -83,7 +84,7 @@ const Projetos = () => {
     },
 
     {
-      id: "4",
+      id: uuidv4(),
       titulo: "Animes",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -97,7 +98,7 @@ const Projetos = () => {
         "Uma aplicação feita em JavaScript Vanila onde conseguimos ver de forma animada as informações de 6 animes mais falados da atualidade!",
     },
     {
-      id: "8",
+      id: uuidv4(),
       titulo: "Site Cafeteria",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -111,7 +112,7 @@ const Projetos = () => {
         "Site desenvolvido junto a equipe Dev Club a fim de aperfeiçoar minhas técnica em FrontEnd. Este foi um dos meus primeiros projetos práticos do zero.",
     },
     {
-      id: "5",
+      id: uuidv4(),
       titulo: "Projeto One Peace",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -125,7 +126,7 @@ const Projetos = () => {
         "Um projeto desenvolvido junto a equipe Dev Em Dobro onde aperfeiçoei minhas técnicas como programador, usando CSS para criar os mais variádos estilos e animações...",
     },
     {
-      id: "6",
+      id: uuidv4(),
       titulo: "Relógio JavaScript",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
@@ -140,7 +141,7 @@ const Projetos = () => {
     },
 
     {
-      id: "3",
+      id: uuidv4(),
       titulo: "Gerador de Imagem",
       tecnologias: [
         { icon: FaHtml5, id: 1, color: "text-orange-600" },
