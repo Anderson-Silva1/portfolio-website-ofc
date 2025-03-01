@@ -190,9 +190,7 @@ const Tecnologias = () => {
   return (
     <section className="w-full px-[4%] py-24" id="ferramentas">
       <div>
-        <h2 className="mb-16 text-center text-4xl font-semibold">
-          Tecnologias e Ferramentas
-        </h2>
+        <h2 className="title">Tecnologias e Ferramentas</h2>
 
         {/* Abas */}
         <div className="mb-16 grid grid-cols-2 justify-center space-x-6 space-y-4 sm:grid-cols-3 sm:space-x-6 sm:space-y-0 lg:grid-cols-4">

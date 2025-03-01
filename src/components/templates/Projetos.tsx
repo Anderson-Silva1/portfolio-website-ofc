@@ -174,7 +174,7 @@ const Projetos = () => {
   return (
     <>
       <section className="bg-slate-900 py-16 text-white" id="projetos">
-        <h3 className="mb-8 text-center text-3xl font-bold">Meus Projetos</h3>
+        <h3 className="title">Meus Projetos</h3>
         <div className="mx-auto grid max-w-[1280px] place-items-center gap-12 px-[4%] md:grid-cols-2 lg:grid-cols-3">
           {isVerMaisProjetos ? projetoPronto : projetoPronto.slice(0, 6)}
         </div>

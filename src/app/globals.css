@@ -38,4 +38,8 @@ body {
   .custom-ItemNavHeader:hover {
     @apply scale-105 rounded-md bg-principal text-white transition;
   }
+
+  .title {
+    @apply mb-16 text-center text-3xl font-bold;
+  }
 }
